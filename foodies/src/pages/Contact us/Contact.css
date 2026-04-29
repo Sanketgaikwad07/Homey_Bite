@@ -1,0 +1,58 @@
+.contact-page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../../assets/get-in-touch-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contact-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.78), rgba(255, 245, 204, 0.65));
+    backdrop-filter: blur(2px);
+}
+
+.contact-page .container {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 22px;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+}
+
+.custom-input {
+    border-radius: 12px;
+    padding: 12px 14px;
+    border: 2px solid #e9ecef;
+    background-color: #fffdf6;
+}
+
+.custom-input:focus {
+    border-color: #ffb703;
+    box-shadow: 0 0 0 0.2rem rgba(255, 183, 3, 0.2);
+}
+
+@media (max-width: 768px) {
+    .contact-page {
+        background-attachment: scroll;
+    }
+
+    .contact-form {
+        padding: 2.5rem 2rem;
+    }
+}

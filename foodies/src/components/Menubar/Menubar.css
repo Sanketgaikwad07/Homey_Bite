@@ -1,0 +1,33 @@
+.logo{
+    margin-right: 25px;
+}
+.menubar{
+    display:flex;
+    align-items: center;
+    gap: 25px;
+    
+
+}   
+.menubar .nav-link {
+    color: #fff !important;
+}
+
+.menubar .navbar-toggler-icon {
+    color: #fff !important;
+}
+
+.menubar .navbar-toggler {
+    border-color: #fff;
+}
+
+.menubar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.menubar .nav-link.active{
+    color: tomato !important;
+}
+.dropdown-menu li{
+    cursor: pointer;
+}

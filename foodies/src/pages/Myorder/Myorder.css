@@ -1,0 +1,25 @@
+.orders-list{display:flex;flex-direction:column;gap:8px}
+.order-row{display:grid;grid-template-columns:44px 1fr 140px;align-items:center;padding:8px 10px;border-bottom:1px solid #f0f0f0;gap:8px}
+.order-left{width:44px}
+.order-delivery-img{width:36px;height:36px;object-fit:contain;border-radius:6px}
+.order-body{min-width:0}
+.order-items{font-size:0.92rem;color:#222;margin:0;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.order-item .item-name{font-weight:700}
+.order-item .item-qty{font-weight:400;color:#444;margin-left:4px}
+.order-item .item-sep{color:#666}
+        .order-amount{font-weight:700;color:#111;font-size:0.92rem;min-width:64px;text-align:right}
+.order-count{color:#333;font-weight:600;min-width:22px;text-align:center}
+.order-status{padding:4px 8px;border-radius:12px;font-weight:700;font-size:0.78rem}
+.status-pending{background:#fff8e1;color:#8a6d3b}
+.status-paid{background:#e6f4ea;color:#216e3a}
+.status-done{background:#e7f7fb;color:#0b5b63}
+.order-right{grid-column:3;display:flex;flex-direction:row;align-items:center;justify-content:flex-end;gap:10px}
+        .order-right{grid-column:3;display:flex;flex-direction:row;align-items:center;justify-self:end;gap:10px}
+.order-action{display:flex;align-items:center;justify-content:flex-end}
+.card .card-body{padding:10px}
+@media (max-width:900px){
+	.order-row{grid-template-columns:40px 1fr 120px;padding:6px}
+	.order-delivery-img{width:32px;height:32px}
+	.order-items{font-size:0.86rem}
+	.order-right{gap:6px}
+}
