@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { StoreContext } from '../../context/StoreContext';
-import FoodItem from '../FoodItem/foodItem';
+import FoodItem from '../FoodItem/FoodItem';
 
 
 
