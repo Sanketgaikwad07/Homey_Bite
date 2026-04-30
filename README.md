@@ -1,66 +1,135 @@
-Homey Bite Backend 🚀
-Spring Boot backend API for the Homey Bite food ordering application.
-This backend handles authentication, food management, cart operations, order processing, payment integration, and admin functionalities.
+# Homey Bite 🍔
 
-backend/
+Homey Bite is a full-stack food ordering web application built using React, Java Spring Boot, and MySQL. Users can browse food items, add products to cart, place orders, and make payments. The project also includes an admin panel for managing food items and orders.
+
+---
+
+# 📁 Project Structure
+
+```bash
+Homey_Bite/
 │
-├── src/main/java/com/mywork/homey_bites
-│   ├── controller
-│   ├── entity
-│   ├── repository
-│   ├── services
-│   ├── config
-│   ├── io
-│   └── util
-│
-├── src/main/resources
-│   └── application.properties
-│
-└── pom.xml
+├── foodies/        # Frontend User Application
+├── admainpannel/   # Admin Panel
+└── backend/        # Spring Boot Backend API
+```
 
-🚀 Features
-👤 Authentication
-User Registration
-User Login
-JWT Authentication
-Role Based Authorization
+---
 
-🍔 Food Management
-Add Food Item
-Update Food Item
-Delete Food Item
-View All Foods
+# 🚀 Features
 
-🛒 Cart Management
-Add to Cart
-Remove from Cart
-Update Quantity
-View Cart
+## 👨‍🍳 User Features (foodies)
 
-📦 Order Management
-Place Order
-View Orders
-Order History
-Update Order Status
+* User Registration & Login
+* JWT Authentication
+* Browse Food Items
+* Add to Cart
+* Place Orders
+* Razorpay Payment Integration
+* View My Orders
+* Responsive UI
 
-💳 Payment Integration
-Razorpay Payment Gateway
-Payment Verification
+---
 
-💻 Tech Stack
-Backend
-Java
-Spring Boot
-Spring Security
-JWT
-Maven
-Database
-MySQL
+## 🛠️ Admin Features (admainpannel)
 
-⚙️ Installation
-Clone Repository
+* Admin Login
+* Add Food Items
+* Update Food Details
+* Delete Food Items
+* View All Orders
+* Manage Order Status
+
+---
+
+# 💻 Tech Stack
+
+## Frontend
+
+* React.js
+* React Router
+* Axios
+* CSS
+* Toastify
+
+## Backend
+
+* Java
+* Spring Boot
+* Spring Security
+* JWT Authentication
+* Maven
+
+## Database
+
+* MySQL
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
+```bash
 git clone https://github.com/Sanketgaikwad07/Homey_Bite.git
+```
 
-▶️ Run Backend
+---
+
+# ▶️ Frontend Setup
+
+## foodies
+
+```bash
+cd foodies
+npm install
+npm run dev
+```
+
+## admainpannel
+
+```bash
+cd admainpannel
+npm install
+npm run dev
+```
+
+---
+
+# ▶️ Backend Setup
+
+```bash
 cd backend
+mvn spring-boot:run
+```
 
+---
+
+# 🔐 Authentication
+
+This project uses JWT (JSON Web Token) based authentication for secure login and API access.
+
+---
+
+# 📦 API Features
+
+* User API
+* Cart API
+* Order API
+* Payment API
+* Food API
+* Admin API
+
+---
+
+# 📸 Screenshots
+
+Add your project screenshots here.
+
+---
+
+# 👨‍💻 Developer
+
+Developed by Sanket Gaikwad
+
+GitHub: [https://github.com/Sanketgaikwad07](https://github.com/Sanketgaikwad07)
